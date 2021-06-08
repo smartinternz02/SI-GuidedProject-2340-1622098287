@@ -1,0 +1,32 @@
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Employee Attrition Prediction</title>
+		
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Employee Attrition Prediction</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App using Flask.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if y==0 %}
+				<h1>Prediction: <span class='safe'>Hurryyyyy! Employee will continue work with the company.</span></h1>
+				
+			{% elif y==1 %}
+				<h1>Prediction: <span class='danger'>Ooops! Employee will leave the company !!!!!</span></h1>
+				
+			{% endif %}
+		</div>
+
+
+
+	</body>
+</html>
